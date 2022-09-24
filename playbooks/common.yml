@@ -22,8 +22,8 @@
         state: touch
         mode: u=rw,g=rw,o=r   
 
-    # - name: Get the current time
-    #   appliance_system_time_info:     
+    - name: Get the current time
+      appliance_system_time_info:     
 
 - name: update LB server
   hosts: lb
@@ -52,5 +52,7 @@
         state: touch
         mode: u=rw,g=rw,o=r    
 
-    #  - name: Get the current time
-    #    appliance_system_time_info:   
+     - name: Get the current time
+       appliance_system_time_info:   
+
+       
