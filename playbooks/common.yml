@@ -22,9 +22,6 @@
         state: touch
         mode: u=rw,g=rw,o=r   
 
-    - name: Get the current time
-      appliance_system_time_info:     
-
 - name: update LB server
   hosts: lb
   remote_user: ubuntu
@@ -52,7 +49,4 @@
         state: touch
         mode: u=rw,g=rw,o=r    
 
-    - name: Get the current time
-      appliance_system_time_info:   
-
-       
+    
