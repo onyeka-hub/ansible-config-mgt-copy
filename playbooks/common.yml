@@ -20,7 +20,10 @@
       file:
         path: /home/ec2-user/test/foo.txt
         state: touch
-        mode: u=rw,g=rw,o=r    
+        mode: u=rw,g=rw,o=r   
+
+    # - name: Get the current time
+    #   appliance_system_time_info:     
 
 - name: update LB server
   hosts: lb
@@ -48,3 +51,6 @@
         path: /home/ubuntu/test/foo.txt
         state: touch
         mode: u=rw,g=rw,o=r    
+
+    #  - name: Get the current time
+    #    appliance_system_time_info:   
